@@ -92,6 +92,12 @@
                     behavior: 'smooth'
                 });
             });
+              // Translate button functionality
+            const translateBtn = document.querySelector('.translate-btn');
+            const translateWidget = document.querySelector('#google_translate_element');
+            translateBtn.addEventListener('click', function() {
+                translateWidget.style.display = translateWidget.style.display === 'none' ? 'block' : 'none';
+            });
             // Footer scroll effect
             window.addEventListener('scroll', function() {
                 const footer = document.querySelector('footer');
